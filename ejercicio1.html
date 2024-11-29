@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional</title>
+</head>
+<body>
+    <script>
+
+let calificacion = parseInt(prompt("Ingresa tu calificación entre 0 y 100:"));
+
+// Verificar que la calificación esté en el rango permitido
+if (calificacion >= 0 && calificacion <= 100) {
+    // Condición para calificación mayor o igual a 90
+    if (calificacion >= 90) {
+        document.write("Aprobado con honores");
+    }
+    // Condición para calificación entre 70 y 89
+    else if (calificacion >= 70) {
+        document.write("Aprobado");
+    }
+    // Condición para calificación menor a 70
+    else {
+        document.write("Reprobado");
+    }
+} else {
+    alert("Por favor, ingresa una calificación válida entre 0 y 100.");
+}        
+    </script>
+    
+</body>
+</html>
